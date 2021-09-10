@@ -8,10 +8,16 @@
 		<link rel="stylesheet" href="./inscription.css">
 		<title>Acupuncture2000</title>
 	 <link rel="icon" type="image/png" href="../icone" />
+     <link rel="stylesheet" href="/vue/sharedfile/navbar.css">
 	</head>
     <body>
         <header>
             <!-- <div includeHTML="../../shared/header.html"></div> -->
+            <div includeHTML="./navbar.html"></div>
+            <nav>
+               <!-- {{ @extends navbar}} -> twig
+                <?php include('./navbar.html');?> -> php -->
+            </nav>
         </header>
 
         <div id="corps">
