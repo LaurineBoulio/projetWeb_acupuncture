@@ -2,44 +2,45 @@
 <html lang="fr">
 
     <head>
-        <script src='.js'></script>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <title>Accueil - Acupuncture 2000</title>
-    </head>
+		<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<title>Acupuncture2000</title>
+	 <link rel="icon" type="image/png" href="icone" />
+	</head>
 
     <body>
         <div id="header">
             <h1>Acupuncture 2000</h1>
-            <img class="icone" src="icone.jpg" alt="icone">
+            <img class="icone" src="icone" alt="icone">
         </div>
-        <section>
-            <form action=".php" method="POST" autocomplete="on">
-                <h2>Connexion</h2>
-                
-                <label><b>Login</b></label>
-                <input type="text" placeholder="Entrer le login" name="username" required>
-                <br>
-                <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
-                <br>
-                <input type="submit" id='submit' value='LOGIN' >
-                <!--<?php
-                if(isset($_GET['erreur'])){
-                    $err = $_GET['erreur'];
-                    if($err==1 || $err==2)
-                        echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
-                }
-                ?> -->
-            </form>
-        </section>
-        <section>
-            <h2><a href="inscription.htm">Inscription</a></h2>
-        </section>
-        <section>
-            <h2><a href="consultation.html">Consulter les pathologies (avec filtre)</a> </h2>
-        </section>
-        <section>
-            <h2><a href="recherche.html">Rechercher des pathologies par mots-clés</a></h2>
-        </section>
+        <div id="corps">
+            <div id="seConnecter">
+                <h1>Se connecter</h1>
+                <form action="#" method="get" name="formConnexion" accept-charset="utf-8" autocomplete="on">
+                    <div id="formulaire">
+                        <div class ="champs">
+                            <label for="nom_utilisateur">Nom d'utilisateur : </label>
+                            <input type="text" id="nom_utilisateur" name="nom_utilisateur">	
+                        </div>
+                        <div class ="champs">
+                            <label for="mdp">Mot de passe : </label>
+                            <input type="text" id="mdp" name="mdp">	
+                        </div>
+                        <div id ="boutons">
+                            <input type="submit" name="connexion" id="valider" value="connexion" disabled> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="inscription">
+                <h2><a href="inscription/inscription.html">Inscription</a></h2>
+            </div>
+        </div>
+        <div id="consultation">
+            <h2><a href="consultation/consultation.html">Consulter les pathologies (avec filtre)</a> </h2>
+        </div>
+        <div id="recherche">
+            <h2><a href="recherche/recherche.html">Rechercher des pathologies par mots-clés</a></h2>
+        </div>
     </body>
