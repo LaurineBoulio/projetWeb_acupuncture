@@ -4,6 +4,11 @@ body{
     justify-content: center;
 }
 
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
 #corps{
   background-color: #ffffff;
   margin-left: auto;
@@ -55,14 +60,14 @@ body{
 }
 
 .etoile{
-  color : #e6005c;
+  color : #3eaa3e;
 }
 
  #valider{
   padding: 5px;
   margin-bottom: 10px;
   color: white;
-  background-color: #e6005c;
+  background-color: #3eaa3e;
   border-radius: 5px;
   background-repeat: no-repeat;  
 }
@@ -74,7 +79,7 @@ body{
   margin-bottom: 10px;  
   margin-right : 10px;
   color: white;
-  background-color: #e6005c;
+  background-color: #007c53;
   border-radius: 5px;
   background-repeat: no-repeat;
 }
