@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<link rel="stylesheet" href="./inscription.css">
-		<title>Acupuncture2000</title>
+		<title>Inscription | Acupuncture2000</title>
 	 <link rel="icon" type="image/png" href="../icone" />
      <link rel="stylesheet" href="/vue/sharedfile/navbar.css">
 	</head>
