@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<link rel="stylesheet" href="style.css">
-		<title>Acceuil | Acupuncture2000</title>
+		<title>Accueil | Acupuncture2000</title>
 	 <link rel="icon" type="image/png" href="icone" />
 	</head>
 
