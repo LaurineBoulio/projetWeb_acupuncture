@@ -36,8 +36,6 @@
                         </div>
                     </form>
                 </div>
-                <div id="inscription">
-                </div>
             </div>
         </div>
         
