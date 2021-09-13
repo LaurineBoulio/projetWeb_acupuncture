@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<link rel="stylesheet" href="./recherche.css">
-		<title>Acupuncture2000</title>
+		<title>Recherche | Acupuncture2000</title>
 	 <link rel="icon" type="image/png" href="../icone" />
 	</head>
     <body>
