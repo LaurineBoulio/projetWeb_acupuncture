@@ -3,18 +3,44 @@
 
 class Patho {
     private $bdd;
-    private $idP;
-    private $mer;
-    private $type;
-    private $desc;
-
+    private $_idP;
+    private $_mer;
+    private $_type;
+    private $_desc;
 
     public function __construct(){
         $this->$bdd = NULL;
-        $this->$idP = NULL;
-        $this->$mer = NULL;
-        $this->$type = NULL;
-        $this->$desc = NULL;
+        $this->$_idP = NULL;
+        $this->$_mer = NULL;
+        $this->$_type = NULL;
+        $this->$_desc = NULL;
+    }
+
+
+    function getIdP(){
+        return $this->_idP;
+    }
+    function getMer(){
+        return $this->_mer;
+    }
+    function getType(){
+        return $this->_type;
+    }
+    function getDesc(){
+        return $this->_desc;
+    }
+
+    function setIdP($idP){
+        $this->_idP = $idP;
+    }
+    function setMer($mer){
+        $this->_mer = $mer;
+    }
+    function setType($type){
+        $this->_type = $type;
+    }
+    function setDesc($desc){
+        $this->_desc = $desc;
     }
 
     function SearchPatho(){

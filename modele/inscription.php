@@ -3,7 +3,6 @@
 	require_once("./BDD.php");
     //include("../vue/confirmation.php")
   /*
-    echo 'p';
 
     //if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['pseudo']) && isset($_POST['mdp']) && isset($_POST['nom']) &&){
         $bdd = connectDb();
