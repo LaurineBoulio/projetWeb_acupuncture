@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang=fr dir="ltr">
 	<head>
@@ -18,9 +17,11 @@
             <h2>Consultation des pathologies</h2>
             <form action="#" method="get" name="formSaisie" accept-charset="utf-8">
                 <div id="formulaire">
-                
+                    
                     <div class ="champs">
-                        
+                    <input type='checkbox' name='checkboxvar[]' value='checkboxvar[]'>1<br>
+
+                    
                     </div>	
 
                     <div id ="boutons">

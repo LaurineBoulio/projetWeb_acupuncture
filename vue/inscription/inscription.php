@@ -1,4 +1,11 @@
 
+<?php
+
+	if(isset($_POST['valider']) AND ($_POST['valider'] == 'Valider')){ 
+		header("Location:confirmation.php"); 
+	}
+
+?>	
 
 <!DOCTYPE html>
 <html lang=fr dir="ltr">
@@ -8,21 +15,21 @@
 		<link rel="stylesheet" href="./inscription.css">
 		<title>Acupuncture2000</title>
 	 <link rel="icon" type="image/png" href="../icone" />
-     <link rel="stylesheet" href="/vue/sharedfile/navbar.css">
+     <link rel="stylesheet" href="../sharedfile/navbar.css">
 	</head>
     <body>
         <header>
             <!-- <div includeHTML="../../shared/header.html"></div> -->
-            <div includeHTML="./navbar.html"></div>
+            <!--<div includeHTML="./navbar.html"></div> -->
             <nav>
-               <!-- {{ @extends navbar}} -> twig
-                <?php include('./navbar.html');?> -> php -->
+               <!-- {{ @extends navbar}} -> twig -->
+    
             </nav>
         </header>
 
         <div id="corps">
             <h2>Inscription</h2>
-            <form action="#" method="get" name="formSaisie" accept-charset="utf-8">
+            <form action="#" method="post" name="formSaisie" accept-charset="utf-8">
                 <div id="formulaire">
                 
                     <div class ="champs">
@@ -47,7 +54,7 @@
                     </div>
                     <div class ="champs">
                         <label for="mdp">Mot de passe <span class="etoile">*</span> : </label>
-                        <input type="text" id="mdp" name="mdp">	
+                        <input type="password" id="mdp" name="mdp">	
                     </div>
                     <div id ="boutons">
                         <input type="reset" name="reinitialiser" id="reinitialiser" value="Réinitialiser">
@@ -62,6 +69,7 @@
         </footer>
         <script type="module" src="./inscription.js"></script>
     </body>
+</html>
    <!--<script type="text/javascript" src=".&& regex_alphab.test(nom.value) && 
         prenom.value != '' && regex_alphab.test(prenom.value) &&
         mail.value != '' && regex_mail.test(mail.value) &&

@@ -2,15 +2,38 @@
 
 
 class Patho {
-    public $patho = '';
+    private $bdd;
+    private $idP;
+    private $mer;
+    private $type;
+    private $desc;
 
-   
-   
-    function patho() {
-        return id;
+
+    public function __construct(){
+        $this->$bdd = NULL;
+        $this->$idP = NULL;
+        $this->$mer = NULL;
+        $this->$type = NULL;
+        $this->$desc = NULL;
     }
 
-    
+    function SearchPatho(){
+        $arrayConsultation = array();
+        $bdd = connectDb();
+        $req = $bdd->query('SELECT * FROM patho');
+        $resultat = $req->fetchAll();
+        $nbre_lignes = count($resultat);
+        foreach($resultat as $row) {
+            $arrayConsultation[] = array(
+                "idP" => $row['idP'],
+                "mer" => $row['mer'],
+                "type" => $row['type'],
+                "desc" => $row['desc'],
+            );
+        }
+        return $arrayConsultation;
+    }
+
 }
 
 
