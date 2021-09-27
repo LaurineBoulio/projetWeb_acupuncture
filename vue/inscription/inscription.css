@@ -30,7 +30,8 @@ a:link
 #corps h2{
   border-top: 1px solid;
   border-bottom: 1px solid;
-  background-color: #88A1FC;
+  background-color: #007c53;
+  color: white;
   text-align: center;
   font-size : 30px;
   padding-top: 5px;
