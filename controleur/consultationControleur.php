@@ -4,32 +4,37 @@
 
     $consultationDonnees = Patho::SearchPatho();
 
-   //if($formConsultation != '')
+   if($formConsultation != '')
 
-   //mettre la vue 
-
+   
 
     function consultation(){
         $smarty=new Smarty;
-        $smarty-display('../vue/consultation/consultation.php');
+        $smarty-display('../vue/consultation/consultation.html');
     }
 
     function login(){
         $smarty=new Smarty;
-        $smarty-display('../vue/index.php');
+        $smarty-display('../vue/index.html');
     }
+    
 
-
-    function inscript(){
+    function insertinscript(){
         $smarty=new Smarty;
-        $smarty-display('../vue/inscription/inscription.php');
+        $smarty-display('../vue/inscription/inscription.html');
+        if(!empty())
+        $_POST['nom'];
     }
 
     function recheh(){
         $smarty=new Smarty;
-        $smarty-display('../vue/recherche/recherche.php');
+        $smarty-display('../vue/recherche/recherche.html');
     }
 
+    
+
+
+    
 
 
     

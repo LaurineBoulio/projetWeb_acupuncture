@@ -21,4 +21,10 @@ if (isset($_GET['action'])) {
 else {
     listPosts();
     */
+
+    if($action=="getIns"){
+        insertinscript();
+    }
+
+
 }
