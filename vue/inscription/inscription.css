@@ -30,8 +30,8 @@ a:link
 #corps h2{
   border-top: 1px solid;
   border-bottom: 1px solid;
-  background-color: #007c53;
-  color: white;
+  background-color: #C5E0B4;
+  color: #548235;
   text-align: center;
   font-size : 30px;
   padding-top: 5px;
@@ -61,14 +61,14 @@ a:link
 }
 
 .etoile{
-  color : #3eaa3e;
+  color : #548235;
 }
 
  #valider{
   padding: 5px;
   margin-bottom: 10px;
-  color: white;
-  background-color: #3eaa3e;
+  color: #548235;
+  background-color: #C5E0B4;
   border-radius: 5px;
   background-repeat: no-repeat;  
 }
@@ -79,8 +79,8 @@ a:link
   margin-left : 820px;
   margin-bottom: 10px;  
   margin-right : 10px;
-  color: white;
-  background-color: #007c53;
+  color: #548235;
+  background-color: #C5E0B4;
   border-radius: 5px;
   background-repeat: no-repeat;
 }
