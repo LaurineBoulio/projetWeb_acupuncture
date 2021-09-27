@@ -2,11 +2,11 @@
 
     include('../modele/Patho.php');
 
-    $patjo = new Patho;
+    $patho = new Patho;
 
     $patho->patho();
 
-    $this->loadView('../vue/concultation/consultation.php', $patho)
+    $this->loadView('../vue/consultation/consultation.php', $patho)
 
 
 
