@@ -18,29 +18,29 @@ class Patho {
 
 
     function getIdP(){
-        return $this->_idP;
+        return $this->$_idP;
     }
     function getMer(){
-        return $this->_mer;
+        return $this->$_mer;
     }
     function getType(){
-        return $this->_type;
+        return $this->$_type;
     }
     function getDesc(){
-        return $this->_desc;
+        return $this->$_desc;
     }
 
     function setIdP($idP){
-        $this->_idP = $idP;
+        $this->$_idP = $idP;
     }
     function setMer($mer){
-        $this->_mer = $mer;
+        $this->$_mer = $mer;
     }
     function setType($type){
-        $this->_type = $type;
+        $this->$_type = $type;
     }
     function setDesc($desc){
-        $this->_desc = $desc;
+        $this->$_desc = $desc;
     }
 
     function SearchPatho(){

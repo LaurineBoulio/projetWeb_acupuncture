@@ -6,6 +6,7 @@
 		<meta charset="utf-8">
 		
 		<title>Acupuncture2000</title>
+		
 	</head>
 	<body>
 		<div class="corps" style="height : 500px">
