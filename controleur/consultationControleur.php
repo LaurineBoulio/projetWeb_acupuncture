@@ -4,7 +4,9 @@
 
     $consultationDonnees = Patho::SearchPatho();
 
-   if($formConsultation != '')
+   //if($formConsultation != '')
+
+   //mettre la vue 
 
 
 
