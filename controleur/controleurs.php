@@ -16,6 +16,9 @@
     function login(){
         $smarty=new Smarty;
         $smarty-display('../vue/index.html');
+        if(!empty($_POST['speudo']) && !empty($_POST['mdp'])){
+            coLogin($_POST['speudo'], $_POST['mdp']);
+        }
     } 
 
     function insertinscript(){
@@ -29,5 +32,9 @@
     function recheh(){
         $smarty=new Smarty;
         $smarty-display('../vue/recherche/recherche.html');
+    }
+    function accueil(){
+        $smarty=new Smarty;
+        $smarty-display('../vue/index.html');
     }
 

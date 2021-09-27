@@ -12,9 +12,11 @@ $action = isset($_GET['action']) ? $_GET['action'] : NULL;
         consultation();
     }elseif($action=="getRecheh"){
         recheh();
+    }elseif ($action=="getLog") {
+        login();
     }
     else{
-        login();
+        accueil();
     }
 
 

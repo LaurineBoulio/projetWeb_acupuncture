@@ -67,10 +67,9 @@ class Inscription {
         $resultat = $req->fetchAll();
     }
 
-    function insertInscript($nom, $prenom, $speudo, $mail, $telephone, $mdp){
+    function coLogin($speudo, $mdp){
         $bdd = connectDb();
-        $req = $bdd->query('
-        WHERE nom = {$nom} AND {$prenom} AND {$speudo} AND {$mail} AND {$telephone} AND {$mdp}');
+        $req = $bdd->query('SELECT * FROM inscription WHERE speudo = {$speudo} AND mdp = {$mdp}');
         $resultat = $req->fetchAll();
     }
 
