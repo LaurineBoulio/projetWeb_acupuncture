@@ -1,29 +1,20 @@
 <?php
-require('consultationControleur.php');
-require('rechercheControleur.php');
+session_start();
 
-if (isset($_GET['action'])) {
-    /*
-    if ($_GET['action'] == 'listPosts') {
-        listPosts();
-            //    $posts = getPosts();
-            //  require('listPostsView.php');
-    }
-    elseif ($_GET['action'] == 'post') {
-        if (isset($_GET['id']) && $_GET['id'] > 0) {
-            post();
-        }
-        else {
-            echo 'Erreur : aucun identifiant de billet envoyé';
-        }
-    }
-}
-else {
-    listPosts();
-    */
+require('./controleurs.php');
 
+$action = isset($_GET['action']) ? $_GET['action'] : NULL;
+
+ 
     if($action=="getIns"){
         insertinscript();
+    }elseif($action=="getCons"){
+        consultation();
+    }elseif($action=="getRecheh"){
+        recheh();
+    }
+    else{
+        login();
     }
 
 
