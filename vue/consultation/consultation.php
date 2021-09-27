@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang=fr dir="ltr">
 	<head>
@@ -10,7 +11,9 @@
 	</head>
     <body>
         <header>
-            <!-- <div includeHTML="../../shared/header.html"></div> -->
+        
+        
+        
         </header>
 
         <div id="corps">
