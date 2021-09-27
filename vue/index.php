@@ -1,3 +1,14 @@
+<?php
+// put full path to Smarty.class.php
+require('/Smarty-3.0.0/libs/Smarty.class.php');
+$smarty = new Smarty();
+
+$smarty->setTemplateDir('/Smarty-3.0.0/demo/templates');
+$smarty->setCompileDir('/Smarty-3.0.0/demo/templates_c');
+$smarty->setCacheDir('/Smarty-3.0.0/demo/cache');
+$smarty->setConfigDir('/Smarty-3.0.0/demo/configs');
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
