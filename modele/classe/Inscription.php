@@ -61,12 +61,20 @@ class Inscription {
     }
 
 
-    function insertInscript($nom, $prenom, $speudo, $telephone, $mdp){
+    function insertInscript($nom, $prenom, $speudo, $mail, $telephone, $mdp){
         $bdd = connectDb();
-        $req = $bdd->query('INSERT INTO inscription (nom, prenom, speudo, telephone mdp) VALUES ({$nom}, {$prenom}, {$speudo}, {$telephone}, {$mdp})');
+        $req = $bdd->query('INSERT INTO inscription (nom, prenom, speudo, mail, telephone mdp) VALUES ({$nom}, {$prenom}, {$speudo}, {$mail}, {$telephone}, {$mdp})');
         $resultat = $req->fetchAll();
-
     }
+
+    function insertInscript($nom, $prenom, $speudo, $mail, $telephone, $mdp){
+        $bdd = connectDb();
+        $req = $bdd->query('
+        WHERE nom = {$nom} AND {$prenom} AND {$speudo} AND {$mail} AND {$telephone} AND {$mdp}');
+        $resultat = $req->fetchAll();
+    }
+
+
 
 
 }
