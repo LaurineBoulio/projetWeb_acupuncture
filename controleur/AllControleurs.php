@@ -1,4 +1,5 @@
 <?php
+    require_once("../Smarty-3.0.0/libs/Smarty.class.php");
     
     $formConsultation = $_POST['formConsultation'] ?? array();
 
