@@ -38,10 +38,11 @@
                             <div id ="boutons">
                                 <input type="submit" name="connexion" id="valider" value="connexion"> 
                             </div>
-
+<!--
                             <div id ="boutons">
-                                <input type="button" onclick="window.location.href = 'inscription/inscription.html';" id="inscription" value="inscription"/> 
+                                <input type="button" onclick="window.location.href = './index.php?action=getIns';" id="inscription" value="inscription"/> 
                             </div>
+                        -->
 
                         </div>
                     </form>
@@ -53,8 +54,12 @@
             <h2><a href="./index.php?action=getCons">Consulter les pathologies (avec filtre)</a> </h2>
         </div>
 
+        <div id="inscription">
+            <h2><a href="./index.php?action=getIns">Ins</a> </h2>
+        </div>
+
         <div id="recherche">
-            <h2><a href="./vue/recherche/recherche.html">Rechercher des pathologies par mots-clés</a></h2>
+            <h2><a href="./index.php?action=getRecheh">Rechercher des pathologies par mots-clés</a></h2>
         </div>
 
     </body>

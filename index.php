@@ -5,9 +5,10 @@ require('./controleur/controleurs.php');
 
 $action = isset($_GET['action']) ? $_GET['action'] : NULL;
 
- 
+$smarty=new Smarty;
 if($action=="getIns"){
-    insertinscript();
+
+    inscript($smarty);
 }elseif($action=="getCons"){
     consultation();
 }elseif($action=="getRecheh"){

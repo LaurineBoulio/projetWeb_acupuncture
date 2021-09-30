@@ -19,17 +19,29 @@ require_once ('./modele/BDD.php');
     function login(){
         $smarty=new Smarty;
         $smarty->display('../vue/index.html');
-        if(!empty($_POST['speudo']) && !empty($_POST['mdp'])){
-            coLogin($_POST['speudo'], $_POST['mdp']);
+        /*
+        if(!empty($_POST['pseudo']) && !empty($_POST['mdp'])){
+            coLogin($_POST['pseudo'], $_POST['mdp']);
         }
+        */
     } 
 
-    function insertinscript(){
-        $smarty=new Smarty;
+    function inscript($smarty){
+
+        //$connect = Inscription::insertInscript();
+        //$connect->insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
+        
+        $inscription = new Inscription(1,$_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
+        
+        if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['pseudo']) && !empty($_POST['mail']) && !empty($_POST['mdp'])){
+            //insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
+            //$connect = Inscription::insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
+            $inscription::insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
+        } 
+        
         $smarty->display('../vue/inscription/inscription.html');
-        if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['speudo']) && !empty($_POST['mail']) && !empty($_POST['mdp'])){
-            insertInscript($_POST['nom'], $_POST['prenom'], $_POST['speudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
-        }        
+        
+             
     }
  
     function recheh(){

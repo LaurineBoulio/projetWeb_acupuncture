@@ -1,7 +1,7 @@
 <?php
 
 class Inscription {
-    private $bdd;
+    //private $bdd;
     private $_id;
     private $_nom;
     private $_prenom;
@@ -11,7 +11,7 @@ class Inscription {
 
 
     public function __construct(){
-        $this->$bdd = NULL;
+        //$this->$bdd = NULL;
         $this->$_id = NULL;
         $this->$_nom = NULL;
         $this->$_prenom = NULL;
@@ -59,20 +59,47 @@ class Inscription {
     }
 
 
-    function insertInscript($nom, $prenom, $speudo, $mail, $telephone, $mdp){
+    public function insertInscript($nom, $prenom, $pseudo, $mail, $telephone, $mdp){
         $bdd = connectDb();
-        $req = $bdd->query('INSERT INTO inscription (nom, prenom, speudo, mail, telephone mdp) VALUES ({$nom}, {$prenom}, {$speudo}, {$mail}, {$telephone}, {$mdp})');
+        $req = $bdd->query("INSERT INTO inscription (nom, prenom, pseudo,  telephone, mdp) VALUES ('".$nom."', '".$prenom."', '".$pseudo."', '".$telephone."', 'ur') ");
+        echo "INSERT INTO inscription (nom, prenom, pseudo,  telephone, mdp) VALUES ('".$nom."', '".$prenom."', '".$pseudo."', '".$telephone."', 'ur') ";
         $resultat = $req->fetchAll();
     }
 
-    function coLogin($speudo, $mdp){
+/*
+    function coLogin($pseudo, $mdp){
         $bdd = connectDb();
-        $req = $bdd->query('SELECT * FROM inscription WHERE speudo = {$speudo} AND mdp = {$mdp}');
+        $req = $bdd->query('SELECT * FROM inscription WHERE pseudo = {$pseudo} AND mdp = {$mdp}');
         $resultat = $req->fetchAll();
     }
+*/
+/*
+    public function insertInscript($nom, $prenom, $pseudo, $mail, $telephone, $mdp){
+        try{
+            $db = new PDO('mysql:host=localhost;dbname=acupuncture', 'root', '',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+        }
+        catch(PDOException $e){
+            $e->getMessage();
+        }
 
+        $cyptedpassword_user = password_hash($password_user, PASSWORD_DEFAULT);
+        $cyptedpassword_user2 = password_hash($password_user2, PASSWORD_DEFAULT);
 
+        $req = "SELECT id FROM inscription WHERE mail = '".$email_user."'";
+        $resp = $db->query($req);
+        $data = $resp->fetch();
 
+        $smarty = new Smarty;
+        if($data == null){
+            if(password_verify($mdp,$cyptedpassword_user2)){
+                $req = 'INSERT INTO inscription (nom, prenom, pseudo, mail, telephone mdp) VALUES ({$nom}, {$prenom}, {$pseudo}, {$mail}, {$telephone}, {$mdp})';
+                $resp = $db->query($req);
+                /*
+                $_SESSION['id_user']=$data['id_user'];
+                $_SESSION['fname_user']=$data['fname_user'];
+                $_SESSION['lname_user']=$data['lname_user'];
+                */
+   
 
 }
 
