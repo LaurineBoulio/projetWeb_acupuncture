@@ -1,7 +1,7 @@
 <?php
 require_once ('./modele/BDD.php');
 
-    require_once ('./Smarty-3.0.0/libs/Smarty.class.php');
+    require_once ('./libs/Smarty.class.php');
     
     require_once ('./modele/classe/Inscription.php');
     require_once ('./modele/classe/Keysympt.php');

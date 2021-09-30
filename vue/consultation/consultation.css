@@ -60,19 +60,9 @@ body{
   color : #548235;
 }
 
- #valider{
+#valider{
   padding: 5px;
   margin-bottom: 10px;
   border-radius: 5px;
   background-repeat: no-repeat;  
-}
-
-#reinitialiser{
-
-  padding: 5px;
-  margin-left : 820px;
-  margin-bottom: 10px;  
-  margin-right : 10px;
-  border-radius: 5px;
-  background-repeat: no-repeat;
 }
