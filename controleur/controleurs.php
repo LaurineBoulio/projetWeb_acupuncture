@@ -33,6 +33,7 @@
         $smarty=new Smarty;
         $smarty-display('../vue/recherche/recherche.html');
     }
+    
     function accueil(){
         $smarty=new Smarty;
         $smarty-display('../vue/index.html');
