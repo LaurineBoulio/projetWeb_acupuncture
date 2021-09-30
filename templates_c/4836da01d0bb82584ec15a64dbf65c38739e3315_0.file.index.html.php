@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-09-30 13:13:07
+/* Smarty version 3.1.39, created on 2021-09-30 14:17:38
   from 'D:\wamp64\www\projetWeb_acupuncture\vue\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6155b7e3bb5d25_04211583',
+  'unifunc' => 'content_6155c702e6b928_09823474',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4836da01d0bb82584ec15a64dbf65c38739e3315' => 
     array (
       0 => 'D:\\wamp64\\www\\projetWeb_acupuncture\\vue\\index.html',
-      1 => 1633004766,
+      1 => 1633011454,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../sharedfile/template.html' => 1,
   ),
 ),false)) {
-function content_6155b7e3bb5d25_04211583 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6155c702e6b928_09823474 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <?php $_smarty_tpl->_subTemplateRender("file:../sharedfile/template.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -47,7 +47,7 @@ function content_6155b7e3bb5d25_04211583 (Smarty_Internal_Template $_smarty_tpl)
             <div id="corps">
                 <div id="seConnecter">
                     <h2>Se connecter</h2>
-                    <form action="../controleur/indexControleur.php?action=getLog" method="get" name="formConnexion" accept-charset="utf-8" autocomplete="on">
+                    <form action="./index.php?action=getLog" method="get" name="formConnexion" accept-charset="utf-8" autocomplete="on">
                         <div id="formulaire">
                         
                             <div class ="champs">
@@ -75,11 +75,11 @@ function content_6155b7e3bb5d25_04211583 (Smarty_Internal_Template $_smarty_tpl)
         </div>
         
         <div id="consultation">
-            <h2><a href="consultation/consultation.html">Consulter les pathologies (avec filtre)</a> </h2>
+            <h2><a href="./index.php?action=getCons">Consulter les pathologies (avec filtre)</a> </h2>
         </div>
 
         <div id="recherche">
-            <h2><a href="recherche/recherche.html">Rechercher des pathologies par mots-clés</a></h2>
+            <h2><a href="./vue/recherche/recherche.html">Rechercher des pathologies par mots-clés</a></h2>
         </div>
 
     </body><?php }

@@ -1,5 +1,30 @@
+<?php
+/* Smarty version 3.1.39, created on 2021-09-30 14:17:41
+  from 'D:\wamp64\www\projetWeb_acupuncture\vue\consultation\consultation.html' */
 
-        {include file="../../sharedfile/template.html"}
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_6155c70529cb95_46372368',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '468a6c313529c6f1b24428d57eeebf6319dd9411' => 
+    array (
+      0 => 'D:\\wamp64\\www\\projetWeb_acupuncture\\vue\\consultation\\consultation.html',
+      1 => 1633011163,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:../../sharedfile/template.html' => 1,
+  ),
+),false)) {
+function content_6155c70529cb95_46372368 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+        <?php $_smarty_tpl->_subTemplateRender("file:../../sharedfile/template.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 <!DOCTYPE html>
 <html lang=fr dir="ltr">
 	<head>
@@ -48,9 +73,15 @@
         <footer>
             <!-- <div includeHTML="../../shared/footer.html"></div> -->
         </footer>
-        <!--<script type="module" src="./reservation.js"></script> -->
+        <!--<?php echo '<script'; ?>
+ type="module" src="./reservation.js"><?php echo '</script'; ?>
+> -->
     </body>
-   <!--<script type="text/javascript" src="../../Shared/incHeaderFooter.js"></script> -->
+   <!--<?php echo '<script'; ?>
+ type="text/javascript" src="../../Shared/incHeaderFooter.js"><?php echo '</script'; ?>
+> -->
 </html>
 
 
+<?php }
+}
