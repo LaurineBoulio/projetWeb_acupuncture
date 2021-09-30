@@ -1,6 +1,4 @@
 <?php
-	require_once("../BDD.php");
-
 
 class Inscription {
     private $bdd;
