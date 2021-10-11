@@ -13,8 +13,8 @@ if($action=="getIns"){
     consultation();
 }elseif($action=="getRecheh"){
     recheh();
-}elseif ($action=="getLog") {
-    login();
+}elseif ($action=="getLog") { echo 'ca marche 1 chat là';
+    login(); 
 }else{
     accueil();
 }

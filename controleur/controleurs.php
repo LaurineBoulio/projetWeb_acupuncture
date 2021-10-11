@@ -19,27 +19,37 @@ require_once ('./modele/BDD.php');
     function login(){
         $smarty=new Smarty;
         $smarty->display('../vue/index.html');
-        /*
-        if(!empty($_POST['pseudo']) && !empty($_POST['mdp'])){
-            coLogin($_POST['pseudo'], $_POST['mdp']);
+        
+        if(!empty($_POST['nom_utilisateur']) && !empty($_POST['mdp'])){
+
+            Inscription::coLogin($_POST['nom_utilisateur'], $_POST['mdp']);
+            echo '<br>'.'utilisateur : '.$_SESSION['pseudo'];
         }
-        */
+
     } 
 
-    function inscript($smarty){
+    function inscript(){
+        $smarty=new Smarty;
 
         //$connect = Inscription::insertInscript();
         //$connect->insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
         
-        $inscription = new Inscription(1,$_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
+
         
         if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['pseudo']) && !empty($_POST['mail']) && !empty($_POST['mdp'])){
             //insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
             //$connect = Inscription::insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
-            $inscription::insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
-        } 
+           //$inscription = new Inscription($i,$_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
+          
+            //$inscription.setId($i);
+            Inscription::insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
+            $smarty->display('../vue/inscription/confirmation.html');
+        } else{
+            $smarty->display('../vue/inscription/inscription.html');
+        }
+
         
-        $smarty->display('../vue/inscription/inscription.html');
+        
         
              
     }
@@ -54,3 +64,12 @@ require_once ('./modele/BDD.php');
         $smarty->display('../vue/index.html');
     }
 
+//mettre bouton déconnexion dans la navbar
+    function deconnexion(){
+        $_SESSION = array();
+        session_destroy();
+        unset($_SESSION);
+      
+        $smarty = new Smarty;
+        $smarty->display('./vue/index.html');
+      }

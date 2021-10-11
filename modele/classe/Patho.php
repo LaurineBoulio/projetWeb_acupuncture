@@ -58,6 +58,16 @@ class Patho {
             );
         }
         return $arrayConsultation;
+
+        /*
+
+         $req = "SELECT DISTINCT(patho.type),patho.desc FROM patho";
+            $resp = $db->query($req);
+            $listemers = $resp->fetchAll(PDO::FETCH_CLASS);
+
+            return $listemers;
+
+        */
     }
 
 }
