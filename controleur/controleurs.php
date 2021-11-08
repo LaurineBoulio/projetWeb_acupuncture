@@ -14,6 +14,8 @@ require_once ('./modele/BDD.php');
     function consultation(){
         $smarty=new Smarty;
         $smarty->display('../vue/consultation/consultation.html');
+
+        
     }
 
     function login(){
@@ -21,11 +23,9 @@ require_once ('./modele/BDD.php');
         $smarty->display('../vue/index.html');
         
         if(!empty($_POST['nom_utilisateur']) && !empty($_POST['mdp'])){
-
             Inscription::coLogin($_POST['nom_utilisateur'], $_POST['mdp']);
             echo '<br>'.'utilisateur : '.$_SESSION['pseudo'];
         }
-
     } 
 
     function inscript(){
@@ -46,12 +46,7 @@ require_once ('./modele/BDD.php');
             $smarty->display('../vue/inscription/confirmation.html');
         } else{
             $smarty->display('../vue/inscription/inscription.html');
-        }
-
-        
-        
-        
-             
+        }        
     }
  
     function recheh(){
