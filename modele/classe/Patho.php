@@ -58,39 +58,15 @@ class Patho {
             );
         }
         return $arrayConsultation;
+    }
 
-        /*
-
-         $req = "SELECT DISTINCT(patho.type),patho.desc FROM patho";
-            $resp = $db->query($req);
-            $listemers = $resp->fetchAll(PDO::FETCH_CLASS);
-
-            return $listemers;
-
-        */
+    public static function listePathologies(){
+        $bdd = connectDb();
+        $req = $bdd->query("SELECT `type`, `desc` FROM patho");
+        $resultat = $req->fetchAll();
+        return $resultat;    
     }
 
 }
-
-
-
-
-
-
-/*
-$foo = new Foo;
-function getVarName()
-{
-     return 'aFuncName';
-}
-print $foo->{$foo->{getVarName()}}();
-
-$manhattanBridge->longueur = 2089.0;
-$manhattanBridge->largeur = 36.6;
-
-$towerBridgeSurface = $towerBridge->getSurface();
-$manhattanBridgeSurface = $manhattanBridge->getSurface();
-*/
-
 
 ?>

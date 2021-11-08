@@ -44,7 +44,12 @@ class Meridien {
         $this->$_yin = $yin;
     }
 
-
+    public static function listeMeridiens(){
+        $bdd = connectDb();
+        $req = $bdd->query("SELECT nom, code FROM meridien");
+        $resultat = $req->fetchAll();
+        return $resultat;
+    }    
 }
 
 ?>

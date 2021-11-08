@@ -10,12 +10,37 @@ require_once ('./modele/BDD.php');
     require_once ('./modele/classe/Patho.php');
     require_once ('./modele/classe/Symptome.php');
     require_once ('./modele/classe/Symptpatho.php');
+    require_once ('./modele/RechercheConsultation.php');
 
     function consultation(){
-        $smarty=new Smarty;
-        $smarty->display('../vue/consultation/consultation.html');
 
-        
+        if(!isset($_POST['meridiens'])){
+            $_POST['meridiens']='';
+        }
+        $filtre1= htmlspecialchars($_POST['meridiens']);
+
+        if(!isset($_POST['pathologies'])){
+            $_POST['pathologies']='';
+        }
+
+        //echo $_POST['meridiens'].' '. $_POST['pathologies'];
+            $rechercheListe = rechercheFiltres($_POST['meridiens'], $_POST['pathologies']);
+    
+               foreach($rechercheListe as $val) echo $val['nom'].' '.$val['desc'];
+                   
+
+        $filtre2= htmlspecialchars($_POST['pathologies']);
+
+        $liste_patho = Patho::listePathologies();   
+        $liste_meridien = Meridien::listeMeridiens();
+
+        $smarty=new Smarty;
+        $smarty->assign('lPatho', $liste_patho);
+        $smarty->assign('lMeri', $liste_meridien);
+        $smarty->assign('fMeri', $filtre1);
+        $smarty->assign('fPatho', $filtre2);
+
+        $smarty->display('../vue/consultation/consultation.html');          
     }
 
     function login(){
@@ -67,4 +92,4 @@ require_once ('./modele/BDD.php');
       
         $smarty = new Smarty;
         $smarty->display('./vue/index.html');
-      }
+    }
