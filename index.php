@@ -15,7 +15,6 @@ if($action=="getIns"){
     recheh();
 }elseif ($action=="getLog") { echo 'ca marche 1 chat là';
     login(); 
-}else{
+}else {
     accueil();
 }
-
