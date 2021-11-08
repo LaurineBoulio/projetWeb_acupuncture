@@ -13,7 +13,7 @@ require_once ('./modele/BDD.php');
 
     function consultation(){
         $smarty=new Smarty;
-        $smarty->display('../vue/consultation/consultation.html');
+        $smarty->display('../vue/consultation.html');
 
         
     }
@@ -43,15 +43,15 @@ require_once ('./modele/BDD.php');
           
             //$inscription.setId($i);
             Inscription::insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
-            $smarty->display('../vue/inscription/confirmation.html');
+            $smarty->display('../vue/confirmation.html');
         } else{
-            $smarty->display('../vue/inscription/inscription.html');
+            $smarty->display('../vue/inscription.html');
         }        
     }
  
     function recheh(){
         $smarty=new Smarty;
-        $smarty->display('../vue/recherche/recherche.html');
+        $smarty->display('../vue/recherche.html');
     }
     
     function accueil(){
