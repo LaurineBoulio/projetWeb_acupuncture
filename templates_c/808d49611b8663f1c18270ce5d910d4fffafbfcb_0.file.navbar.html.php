@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-11-09 18:13:42
+/* Smarty version 3.1.39, created on 2021-11-09 20:04:47
   from 'D:\wamp64\www\projetWeb_acupuncture\sharedfile\navbar.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_618aba56116919_37447847',
+  'unifunc' => 'content_618ad45f144273_10125662',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_618aba56116919_37447847 (Smarty_Internal_Template $_smarty_tpl) {
+function content_618ad45f144273_10125662 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet"  href="css/bootstrap.css">
 

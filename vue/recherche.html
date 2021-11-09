@@ -16,20 +16,32 @@
 
         <div id="corps">
             <h2>Recherche par mot clef</h2>
-            <form action="../../index.php?action=getRecheh" method="get" name="formSaisie" accept-charset="utf-8">
+            <form action="./index.php?action=getRecheh" method="POST">
                 <div id="formulaire">
-                
                     <div class ="champs">
                         <label for="recherche">Tapez votre mot clef : </label> 
 					    <input type="text" id="recherche" name="recherche">
                     </div>	
-
                     <div id ="boutons">
-                        <input type="submit" name="valider" id="valider" value="Valider" disabled> 
+                        <input type="submit" name="valider" id="valider" value="Valider"> 
                     </div>   
-
                 </div>
             </form>
+                <div class="tableau">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            {foreach $lMots as $val}
+                            <tr><td>{$val['desc']}</td></tr>
+                            {/foreach} 
+                        </tbody>
+                      </table>
+                </div>
+           
         </div>
         <footer>
             <!-- <div includeHTML="../../shared/footer.html"></div> -->

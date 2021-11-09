@@ -22,11 +22,9 @@ require_once ('./modele/BDD.php');
         if(!isset($_POST['pathologies'])){
             $_POST['pathologies']='';
         }
-
-        //echo $_POST['meridiens'].' '. $_POST['pathologies'];
-            $rechercheListe = rechercheFiltres($_POST['meridiens'], $_POST['pathologies']);
     
-               foreach($rechercheListe as $val) echo $val['nom'].' '.$val['desc'];
+        $rechercheListe = rechercheFiltres($_POST['meridiens'], $_POST['pathologies']);
+    
                    
 
         $filtre2= htmlspecialchars($_POST['pathologies']);
@@ -37,8 +35,10 @@ require_once ('./modele/BDD.php');
         $smarty=new Smarty;
         $smarty->assign('lPatho', $liste_patho);
         $smarty->assign('lMeri', $liste_meridien);
-        $smarty->assign('fMeri', $filtre1);
-        $smarty->assign('fPatho', $filtre2);
+        $smarty->assign('lRecherche', $rechercheListe);
+
+/*         $smarty->assign('fMeri', $filtre1);
+        $smarty->assign('fPatho', $filtre2); */
 
         $smarty->display('../vue/consultation.html');          
     }
@@ -76,6 +76,18 @@ require_once ('./modele/BDD.php');
  
     function recheh(){
         $smarty=new Smarty;
+     
+            if(!empty($_POST['recherche'])){
+                $motsListe = Symptome::rechercheMot($_POST['recherche']);
+            }else{
+                $motsListe = array();
+            }
+            $smarty->assign('lMots', $motsListe);
+        
+       
+       
+
+
         $smarty->display('../vue/recherche.html');
     }
     
