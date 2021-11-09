@@ -1,5 +1,30 @@
-	
-    {include file="../sharedfile/template.html"}
+<?php
+/* Smarty version 3.1.39, created on 2021-11-09 18:21:14
+  from 'D:\wamp64\www\projetWeb_acupuncture\vue\inscription.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_618abc1a567b11_06954114',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '933ad9afb81f4cc4557f2fd080f4d67b84edfb95' => 
+    array (
+      0 => 'D:\\wamp64\\www\\projetWeb_acupuncture\\vue\\inscription.html',
+      1 => 1636482072,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:../sharedfile/template.html' => 1,
+  ),
+),false)) {
+function content_618abc1a567b11_06954114 (Smarty_Internal_Template $_smarty_tpl) {
+?>	
+    <?php $_smarty_tpl->_subTemplateRender("file:../sharedfile/template.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 <!DOCTYPE html>
 <html lang=fr dir="ltr">
 	<head>
@@ -57,7 +82,11 @@
         </div>
         <footer>
         </footer>
-        <script type="module" src="./inscription.js"></script>
+        <?php echo '<script'; ?>
+ type="module" src="./inscription.js"><?php echo '</script'; ?>
+>
     </body>
 </html>
 
+<?php }
+}

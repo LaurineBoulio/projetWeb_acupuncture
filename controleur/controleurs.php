@@ -40,7 +40,7 @@ require_once ('./modele/BDD.php');
         $smarty->assign('fMeri', $filtre1);
         $smarty->assign('fPatho', $filtre2);
 
-        $smarty->display('../vue/consultation/consultation.html');          
+        $smarty->display('../vue/consultation.html');          
     }
 
     function login(){
