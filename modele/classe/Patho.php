@@ -16,7 +16,6 @@ class Patho {
         $this->$_desc = NULL;
     }
 
-
     function getIdP(){
         return $this->$_idP;
     }

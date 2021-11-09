@@ -1,6 +1,4 @@
 <?php
-	
-
 
 class Symptome {
     private $bdd;
@@ -12,7 +10,6 @@ class Symptome {
         $this->$_idS = NULL;
         $this->$_desc = NULL;
     }
-
 
     function getIdS(){
         return $this->$_idS;
@@ -36,5 +33,4 @@ class Symptome {
     }
 
 }
-
 ?>

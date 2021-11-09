@@ -7,14 +7,15 @@ $action = isset($_GET['action']) ? $_GET['action'] : NULL;
 
 $smarty=new Smarty;
 if($action=="getIns"){
-
     inscript($smarty);
 }elseif($action=="getCons"){
     consultation();
 }elseif($action=="getRecheh"){
     recheh();
-}elseif ($action=="getLog") { echo 'ca marche 1 chat là';
+}elseif($action=="getLog"){
     login(); 
-}else {
+}elseif($action=="getDeco"){
+    deconnexion(); 
+}else{
     accueil();
 }

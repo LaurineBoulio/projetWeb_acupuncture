@@ -1,4 +1,29 @@
-{include file="../sharedfile/template.html"}
+<?php
+/* Smarty version 3.1.39, created on 2021-11-09 20:49:37
+  from 'D:\wamp64\www\projetWeb_acupuncture\vue\index.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_618adee1b5e749_25265188',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '4836da01d0bb82584ec15a64dbf65c38739e3315' => 
+    array (
+      0 => 'D:\\wamp64\\www\\projetWeb_acupuncture\\vue\\index.html',
+      1 => 1636490971,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:../sharedfile/template.html' => 1,
+  ),
+),false)) {
+function content_618adee1b5e749_25265188 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender("file:../sharedfile/template.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
@@ -96,10 +121,19 @@
 	<a href="#page-top" class="cd-top">Top</a>
 
     <!-- script -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/modernizr.js"></script>
-	<script src="js/script.js"></script>
+    <?php echo '<script'; ?>
+ src="js/jquery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="js/bootstrap.min.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="js/modernizr.js"><?php echo '</script'; ?>
+>
+	<?php echo '<script'; ?>
+ src="js/script.js"><?php echo '</script'; ?>
+>
 
 </body>
-</html>
+</html><?php }
+}
