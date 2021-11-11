@@ -23,6 +23,26 @@
 
     <body>
 
+		<div id="corp_connexion">
+			<h2>Se connecter</h2>
+			<form action="./index.php?action=getLog" method="POST">
+				<div id="formulaire">
+					<div class ="champs">
+						<label for="pseudo">Nom d'utilisateur : </label>
+						<input type="text" id="pseudo" name="pseudo">	
+					</div>
+					<div class ="champs">
+						<label for="mdp">Mot de passe : </label>
+						<input type="password" id="mdp" name="mdp">	
+					</div>
+					<div id ="boutons">
+						<input type="submit" name="connexion" id="bouton" value="Connexion"> 
+					</div>
+				</div>
+			</form>
+		</div>
+	
+
     <!-- Intro -->
 	<section class="intro">
 		<div class="container">
@@ -67,24 +87,6 @@
 		</div>
 	</section>
 	
-	<div id="corp_connexion">
-		<h2>Se connecter</h2>
-		<form action="./index.php?action=getLog" method="POST">
-			<div id="formulaire">
-				<div class ="champs">
-					<label for="nom_utilisateur">Nom d'utilisateur : </label>
-					<input type="text" id="nom_utilisateur" name="nom_utilisateur">	
-				</div>
-				<div class ="champs">
-					<label for="mdp">Mot de passe : </label>
-					<input type="password" id="mdp" name="mdp">	
-				</div>
-				<div id ="boutons">
-					<input type="submit" name="connexion" id="bouton" value="connexion"> 
-				</div>
-			</div>
-		</form>
-	</div>
 
 	<!-- Copyright -->
 	<footer>

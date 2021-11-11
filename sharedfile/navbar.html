@@ -13,11 +13,15 @@
 		   <ul class="nav navbar-nav navbar-right">
 			<li><a href="./index.php?action=getAcc">Accueil</a></li>
 			<li><a href="./index.php?action=getCons">Consulter les pathologies</a></li>
-			<li><a href="./index.php?action=getRecheh">Recherche par mots-clés</a></li>
-			<li><a href="./index.php?action=getIns">S'inscrire</a></li>
-			<li><a href="./index.php?action=getLog">Se connecter</a></li>
-			<li><a href="./index.php?action=getDeco">Se déconnecter</a></li>
-		  </ul>
+			{if isset($smarty.session.pseudo)}	
+				<li><a href="./index.php?action=getRecheh">Recherche par mots-clés</a></li>
+				<li><a href="">Profil : {$smarty.session.pseudo}</a></li>
+				<li><a href="./index.php?action=getDeco">Se déconnecter</a></li>
+			{else}	
+				<li><a href="./index.php?action=getIns">S'inscrire</a></li>
+				<li><a href="./index.php?action=getLog">Se connecter</a></li>
+			{/if}		  
+		</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>

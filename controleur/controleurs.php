@@ -35,9 +35,6 @@
         $smarty->assign('lMeri', $liste_meridien);
         $smarty->assign('lRecherche', $rechercheListe);
 
-/*         $smarty->assign('fMeri', $filtre1);
-        $smarty->assign('fPatho', $filtre2); */
-        $smarty->assign('user', $_SESSION['pseudo']);
         $smarty->display('../vue/consultation.html');          
     }
 
@@ -48,8 +45,7 @@
         if(!empty($_POST['nom_utilisateur']) && !empty($_POST['mdp'])){
             Inscription::coLogin($_POST['nom_utilisateur'], $_POST['mdp']);
         }
-        echo '<br>'.'utilisateur : '.$_SESSION['pseudo'];
-        $smarty->assign('user', $_SESSION['pseudo']);
+        //echo '<br>'.'utilisateur : '.$_SESSION['pseudo'];
 
         $smarty->display('../vue/index.html');
     } 
