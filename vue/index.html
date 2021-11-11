@@ -21,15 +21,15 @@
     
 </head>
 
-    <body>
-
+<body>
+	{if !(isset($smarty.session.pseudo))}	
 		<div id="corp_connexion">
 			<h2>Se connecter</h2>
 			<form action="./index.php?action=getLog" method="POST">
 				<div id="formulaire">
 					<div class ="champs">
-						<label for="pseudo">Nom d'utilisateur : </label>
-						<input type="text" id="pseudo" name="pseudo">	
+						<label for="nom_utilisateur">Nom d'utilisateur : </label>
+						<input type="text" id="nom_utilisateur" name="nom_utilisateur">	
 					</div>
 					<div class ="champs">
 						<label for="mdp">Mot de passe : </label>
@@ -41,7 +41,7 @@
 				</div>
 			</form>
 		</div>
-	
+	{/if}	
 
     <!-- Intro -->
 	<section class="intro">

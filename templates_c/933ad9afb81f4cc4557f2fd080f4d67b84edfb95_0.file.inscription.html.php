@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-11-11 16:42:58
+/* Smarty version 3.1.39, created on 2021-11-11 17:17:12
   from 'D:\wamp64\www\projetWeb_acupuncture\vue\inscription.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_618d4812ad8331_38667708',
+  'unifunc' => 'content_618d50184604a9_63343575',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '933ad9afb81f4cc4557f2fd080f4d67b84edfb95' => 
     array (
       0 => 'D:\\wamp64\\www\\projetWeb_acupuncture\\vue\\inscription.html',
-      1 => 1636490555,
+      1 => 1636651019,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../sharedfile/template.html' => 1,
   ),
 ),false)) {
-function content_618d4812ad8331_38667708 (Smarty_Internal_Template $_smarty_tpl) {
+function content_618d50184604a9_63343575 (Smarty_Internal_Template $_smarty_tpl) {
 ?>	
 <?php $_smarty_tpl->_subTemplateRender("file:../sharedfile/template.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>

@@ -62,7 +62,9 @@
             //$inscription = new Inscription($i,$_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
             //$inscription.setId($i);
             Inscription::insertInscript($_POST['nom'], $_POST['prenom'], $_POST['pseudo'], $_POST['mail'], $_POST['telephone'],  $_POST['mdp']);
-            $smarty->display('../vue/confirmation.html');
+            Inscription::coLogin($_POST['pseudo'], $_POST['mdp']);
+            $smarty->display('../vue/index.html');
+          
         }else{
             $smarty->display('../vue/inscription.html');
         }        
