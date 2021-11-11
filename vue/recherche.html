@@ -23,15 +23,17 @@
 					    <input type="text" id="recherche" name="recherche">
                     </div>	
                     <div id ="boutons">
-                        <input type="submit" name="valider" id="valider" value="Valider"> 
+                        <input type="submit" name="valider" id="valider" value="Valider">
+                         
                     </div>   
-                </div>
+                </div> 
+               
             </form>
                 <div class="tableau">
                     <table class="table">
                         <thead>
                           <tr>
-                            <th scope="col">Description</th>
+                            <th scope="col">Recherche associé au mot :  {foreach $lRecherche as $val}  {$val} {/foreach} </th>
                           </tr>
                         </thead>
                         <tbody>

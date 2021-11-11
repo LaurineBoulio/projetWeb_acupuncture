@@ -77,8 +77,10 @@
             $motsListe = Symptome::rechercheMot($_POST['recherche']);
         }else{
             $motsListe = array();
+            $_POST['recherche'] = "";
         }
         $smarty->assign('lMots', $motsListe);
+        $smarty->assign('lRecherche', $_POST['recherche']);
      
         $smarty->display('../vue/recherche.html');
     }
