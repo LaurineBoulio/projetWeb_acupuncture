@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-11-11 17:17:05
+/* Smarty version 3.1.39, created on 2021-11-11 18:17:34
   from 'D:\wamp64\www\projetWeb_acupuncture\vue\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_618d5011666fb1_11583204',
+  'unifunc' => 'content_618d5e3e2ebb04_77479882',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4836da01d0bb82584ec15a64dbf65c38739e3315' => 
     array (
       0 => 'D:\\wamp64\\www\\projetWeb_acupuncture\\vue\\index.html',
-      1 => 1636651013,
+      1 => 1636654633,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:../sharedfile/template.html' => 1,
   ),
 ),false)) {
-function content_618d5011666fb1_11583204 (Smarty_Internal_Template $_smarty_tpl) {
+function content_618d5e3e2ebb04_77479882 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:../sharedfile/template.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -37,7 +37,7 @@ $_smarty_tpl->_subTemplateRender("file:../sharedfile/template.html", $_smarty_tp
     <meta name="author" content="">
 
     <title>Accueil | Acupuncture2000</title>
-    <link rel="icon" type="image/png" href="img/icone.png" />
+    <link rel="icon" type="image/png" href="./img/icone.png" />
     
     <!-- Css -->
     <link href="css/bootstrap.css" rel="stylesheet">
