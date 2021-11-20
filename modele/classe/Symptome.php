@@ -27,9 +27,12 @@ class Symptome {
 
     public static function rechercheMot($mot){
         $bdd = connectDb();
-        $req = $bdd->query("SELECT `desc` FROM symptome WHERE `desc` LIKE '%".$mot."%' "); // 
+        $req = $bdd->query(" SELECT `desc` FROM symptome WHERE `desc` LIKE '".$mot." %'  OR `desc` LIKE '% ".$mot." %' OR `desc` LIKE '% ".$mot."' "); // 
         $resultat = $req->fetchAll();
         return $resultat;    
+   
+    
+
     }
 
 }
